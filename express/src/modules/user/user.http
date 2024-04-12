@@ -1,0 +1,16 @@
+# Create a new user
+POST http://localhost:3000/users/register HTTP/1.0
+Content-Type: application/json
+
+{
+   "email": "user@notfound.local",
+   "firstname": "test",
+   "password": "123456"
+}
+
+###
+
+# Get user detail
+GET http://localhost:3000/users/de1ecb68-c8f7-48f3-a334-310268ec9825 HTTP/1.0
+
+###

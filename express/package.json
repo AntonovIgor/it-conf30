@@ -1,0 +1,44 @@
+{
+  "name": "example-rest-express",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Example of implementing a REST API service in Node.js using the Express web framework",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/main.js",
+    "start:dev": "nodemon",
+    "build": "npm run clean && npm run compile",
+    "lint": "eslint ./src/ --ext .ts",
+    "compile": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "ts": "ts-node"
+  },
+  "keywords": [
+    "rest",
+    "example",
+    "express",
+    "ntier"
+  ],
+  "author": "Igor Antonov (https://www.youtube.com/@antonovjs)",
+  "license": "MIT",
+  "dependencies": {
+    "class-transformer": "0.5.1",
+    "express": "4.19.2",
+    "express-async-handler": "1.2.0",
+    "http-status-codes": "2.3.0",
+    "inversify": "6.0.2",
+    "reflect-metadata": "0.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/node": "20.12.7",
+    "@typescript-eslint/eslint-plugin": "7.6.0",
+    "@typescript-eslint/parser": "7.6.0",
+    "eslint": "8.57.0",
+    "nodemon": "3.1.0",
+    "rimraf": "5.0.5",
+    "ts-node": "10.9.2",
+    "tslib": "2.6.2",
+    "typescript": "5.4.5"
+  }
+}
