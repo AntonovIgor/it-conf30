@@ -1,0 +1,10 @@
+* text eol=lf
+*.jpg -text
+*.png -text
+*.gif -text
+*.mp4 -text
+*.mp3 -text
+*.woff -text
+*.ttf -text
+*.woff2 -text
+*.pdf -text
